@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+    <head> <meta name="viewport" content="width=device-width,initial-scale=4.0">
+        <title>HomeTown Form</title>
+        <meta name="author" content="Diana">
+    </head>
+    <body>
+        <form action="/action_page.php" method="get">
+            <fieldset>
+                <legend>My HomeTown:</legend>
+                Name:<input type="text"size="50" ><br><br>
+                Age:<input type="text" name="userage" id="age" size="2" maxlength="2"><br><br>
+                Address:<input type="text" size="50"><br><br>
+               <label for="email">Email</label>
+               <input type="email" id="email" name="usermail">
+               <br><br><label for="password">Password:</label>
+               <input type="password" id="password" name="password" minlength="8"><br><br>
+               <input type="hidden"   id="password" name="password">
+               <label>Gender:</label>
+               <label><input type="radio" value="f" name="gender"> Female</label>
+               <label><input value="m" type="radio" name="gender"> Male</label>
+                <br><br>City:<select class="combo">
+                    <option disabled selected>--Choose City--</option>
+                    <option value="Lawas">Lawas</option>
+                    <option value="Limbang">Limbang</option>
+                    <option value="Mukah">Mukah</option>
+                    <option value="Niah">Niah</option>
+                    <option value="Pusa">Pusa</option>
+                    <option value="Kanowit">Kanowit</option>
+                    <option value="Miri">Miri</option>
+                    <option value="Betong">Betong</option>
+                    <option value="Sibu">Sibu</option>
+                    <option value="Sri Aman">Sri Aman</option>
+                    <option value="Roban"></option>
+                </select><br><br>
+                <tr>
+                    <td>
+                        <textarea name="message" rows="10" cols="50">Welcome to My HomeTown
+                        </textarea>
+                    </td>
+                </tr>
+                <br>
+                <input type="file" id="myFile" name="filename">
+                <button type="button" onclick="alert('Submission Done')">Submit</button>
+                <input type="reset" value="Reset"> 
+            </fieldset>
+        </form>
+    </body>
+</html>

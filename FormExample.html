@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="">
+    <head> <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Form Example</title>
+    </head>
+    <body>
+        <form action="/action_page.php" method="get">
+            <fieldset>
+                <legend>Personalia:</legend>
+                Name:<input type="text" size="30"><br>
+                Email:<input type="text" size="30"><br>
+                Date of Birth:<input type="text" size="10">
+                Car:<select name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                </select><br>
+                <textarea name="message" rows="10" cols="30">
+                    The cat was playing in the garden.
+                </textarea>
+                <br>
+                <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
